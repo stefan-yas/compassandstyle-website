@@ -1,4 +1,5 @@
 ---
+import Logo from "../components/Logo.astro";
 let year = new Date().getFullYear();
 ---
 
@@ -15,8 +16,8 @@ let year = new Date().getFullYear();
     </div>
 
     <div class="footer-logo">
-      <img class="footer-img" src="footer-logo.svg" alt="logo" />
-      <h3>Snoodev</h3>
+      <Logo />
+      <h3>Compass & Style</h3>
     </div>
 
     <div class="footer-links-right">
@@ -30,30 +31,35 @@ let year = new Date().getFullYear();
 
   <div class="lower-footer-wrapper">
     <div class="social-links">
-      <a href="https://www.instagram.com/snoodev/" target="_blank">
+      <a href="https://www.instagram.com/Compass & Style/" target="_blank">
         <img src="instagram.svg" alt="instagram-link" />
       </a>
 
-      <a href="https://snoodev.t.me" target="_blank">
+      <a href="https://Compass & Style.t.me" target="_blank">
         <img src="telegram.svg" alt="telegram-link" />
       </a>
 
-      <a href="mailto:hello@snoodev.com" target="_blank">
+      <a href="mailto:hello@Compass & Style.com" target="_blank">
         <img src="email.svg" alt="send-email" />
       </a>
 
-      <a href="https://facebook.com/snoodev" target="_blank">
+      <a href="https://facebook.com/Compass & Style" target="_blank">
         <img src="facebook.svg" alt="facebook-link" />
       </a>
     </div>
 
     <div class="copyright">
-      <p>© snoodev {year}</p>
+      <p>© Compass & Style {year}</p>
     </div>
   </div>
 </footer>
 
 <style>
+
+  .footer-logo svg {
+    margin-right: 0px;
+
+  }
   .footer-wrapper {
     display: flex;
     flex-direction: row;

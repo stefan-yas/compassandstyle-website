@@ -3,8 +3,10 @@ import Logo from "../components/Logo.astro";
 ---
 
 <nav>
+  <div class="nav-logo-wrap">
+  <Logo /></div>
   <ul>
-    <Logo />
+   
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/portfolio">Blog</a></li>
@@ -21,6 +23,11 @@ import Logo from "../components/Logo.astro";
     justify-content: center;
     margin-bottom: 0px;
     flex-wrap: nowrap;
+    margin-top: 1em;
+  }
+
+  .nav-logo-wrap {
+    padding-right: 5em;
   }
 
   nav ul {
@@ -33,7 +40,7 @@ import Logo from "../components/Logo.astro";
     margin: 0 0.5rem;
     position: relative;
     text-align: left;
-    padding: 1em;
+    padding: 2em;
   }
 
   /* Nav Dropdown */
