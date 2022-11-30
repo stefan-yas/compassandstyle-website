@@ -1,0 +1,73 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<nav>
+  <ul>
+    <Logo />
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/portfolio">Blog</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 0px;
+    flex-wrap: nowrap;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    position: relative;
+    text-align: left;
+    padding: 1em;
+  }
+
+  /* Nav Dropdown */
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  nav ul li ul {
+    background: var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    display: none;
+    height: auto;
+    left: -2px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 1.7rem;
+    white-space: nowrap;
+    width: auto;
+    z-index: 1;
+  }
+
+  nav ul li ul::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -0.5rem;
+    height: 0.5rem;
+  }
+
+  nav ul li ul li,
+  nav ul li ul li a {
+    display: block;
+  }
+</style>
